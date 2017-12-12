@@ -1,12 +1,12 @@
 
 <?php
 // Domain
-$domain = "danstestingdomain.io";
+$domain = "example.com";
 $o365 = "Yes";
 
 // Root A record
 $a_record_host = "";
-$a_record_ip = "185.160.167.27";
+$a_record_ip = "server-a-record-here";
 
 // Subdomain A Records
 $a_record_sub_1_dom = "";
@@ -38,9 +38,9 @@ $lyncdiscover = "webdir.online.lync.com";
 $sip = "sipdir.online.lync.com";
 
 // Nameservers - DO NOT TOUCH
-$ns1_ns = "ns1.wessex.cloud";
-$ns2_ns = "ns2.wessex.cloud";
-$ns3_ns = "ns3.wessex.cloud";
+$ns1_ns = "ns1.example.com";
+$ns2_ns = "ns2.example.com";
+$ns3_ns = "ns3.example.com";
 
 
 ### Include Extras ###
@@ -125,31 +125,6 @@ echo shell_exec($add_ns3);
 echo $colors->getColoredString("Added Nameserver records", "green") . "\n";
 echo "\n\n";
 // echo shell_exec($command2);
-
-
-
-
-
-
-// Continue or Die
-
-//echo "Do you want to update all DNS records for $domain now?  Type 'yes' to continue: ";
-//$handle = fopen ("php://stdin","r");
-//$line = fgets($handle);
-//if(trim($line) != 'yes'){
-//        echo "Fuck dat! ABORTING!\n";
-//        exit;
-//}
-//fclose($handle);
-//echo"\n";
-//echo"Thank you, continuing.\n";
-//echo "All Done M80\n";
-
-// Finish
-
-
-
-
 
 // End
 ?>
